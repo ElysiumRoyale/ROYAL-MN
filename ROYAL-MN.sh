@@ -182,7 +182,7 @@ done
     sleep 5
 cd ~/.elysiumroyale/ && rm -rf blocks chainstate sporks evodb
 cd ~/.elysiumroyale/ && wget https://github.com/ElysiumRoyale/ROYAL-MN/releases/download/v1.0/bootstrap.zip
-cd ~/.elysiumroyale/ && tar -xzvf bootstrap.zip
+cd ~/.elysiumroyale/ && unzip bootstrap.zip
 sudo rm -rf ~/.elysiumroyale/bootstrap.zip
 
 
