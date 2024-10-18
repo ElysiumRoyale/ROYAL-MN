@@ -1,5 +1,5 @@
 #!/bin/bash
-# ElysiumRoyale Masternode Setup Script V1.0.0 for Ubuntu LTS
+# ElysiumRoyale Masternode Setup Script V1.1.0 for Ubuntu LTS
 #
 # Script will attempt to autodetect primary public IP address
 # and generate masternode private key unless specified in command line
@@ -47,11 +47,11 @@ function stop_daemon {
 genkey=$1
 clear
 
-echo -e "${GREEN} ------- ElysiumRoyale MASTERNODE INSTALLER V1.0.0--------+
+echo -e "${GREEN} ------- ElysiumRoyale MASTERNODE INSTALLER V1.1.0--------+
  |                                                  |
  |                                                  |::
  |       The installation will install and run      |::
- |        the masternode under a user ROYAL.         |::
+ |        the masternode under a user ROYAL.        |::
  |                                                  |::
  |        This version of installer will setup      |::
  |           fail2ban and ufw for your safety.      |::
@@ -130,8 +130,8 @@ fi
 #Installing Daemon
 cd ~
 rm -rf /usr/local/bin/elysium_royale*
-wget https://github.com/ElysiumRoyale/ROYAL-MN/releases/download/v1.0/ElysiumRoyale-ubuntu-daemon.tar.gz
-tar -xzvf ElysiumRoyale-ubuntu-daemon.tar.gz
+wget https://github.com/ElysiumRoyale/ROYAL/releases/download/v1.1.0/Elysium-Royale-1.1.0-Ubuntu-Daemon.tar.gz
+tar -xzvf Elysium-Royale-1.1.0-Ubuntu-Daemon.tar.gz
 sudo chmod -R 755 elysium_royale-cli
 sudo chmod -R 755 elysium_royaled
 cp -p -r elysium_royaled /usr/local/bin
@@ -181,7 +181,7 @@ done
     elysium_royale-cli stop
     sleep 5
 cd ~/.elysiumroyale/ && rm -rf blocks chainstate sporks evodb
-cd ~/.elysiumroyale/ && wget https://github.com/ElysiumRoyale/ROYAL-MN/releases/download/v1.0/bootstrap.zip
+cd ~/.elysiumroyale/ && wget https://github.com/ElysiumRoyale/ROYAL/releases/download/v1.1.0/bootstrap.zip
 cd ~/.elysiumroyale/ && unzip bootstrap.zip
 sudo rm -rf ~/.elysiumroyale/bootstrap.zip
 

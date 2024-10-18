@@ -69,3 +69,20 @@ This guide will assist you in setting up a ElysiumRoyale Masternode on a Linux S
 - ```elysium_royale-cli getmasternodestatus```  
 
 **Сongratulations you did it!**
+
+***
+
+# Guide for ROYAL v1.1.0 MasterNode Update:
+
+The instructions below are designed for users currently running an older version of ROYAL v1.0.0 need update to v1.1.0
+
+##### For Ubuntu 18.04 & 20.04
+```
+wget -q https://raw.githubusercontent.com/ElysiumRoyale/ROYAL-MN/main/ROYAL-MN-Update.sh
+
+sudo chmod +x ROYAL-MN-Update.sh
+
+./ROYAL-MN-Update.sh
+```
+
+***
